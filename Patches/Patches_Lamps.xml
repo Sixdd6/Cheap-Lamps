@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="Anon2EndTableLight"]</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="Anon2EndTableLight"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+			<value>
+				<basePowerConsumption>20</basePowerConsumption>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="Anon2RoyalEndTableLight"]</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="Anon2RoyalEndTableLight"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+			<value>
+				<basePowerConsumption>20</basePowerConsumption>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="ANON2StandingLampBase"]</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="ANON2StandingLampBase"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+			<value>
+				<basePowerConsumption>20</basePowerConsumption>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+</Patch>
