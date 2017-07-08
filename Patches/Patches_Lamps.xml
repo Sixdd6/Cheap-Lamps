@@ -49,4 +49,98 @@
 		</Operations>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[@Name="StandingLampBase"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+		<value>
+			<basePowerConsumption>20</basePowerConsumption>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SunLamp"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+		<value>
+			<basePowerConsumption>1000</basePowerConsumption>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="SmallSunLamp"]</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="SmallSunLamp"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+			<value>
+				<basePowerConsumption>600</basePowerConsumption>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="MiniSunLamp"]</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="MiniSunLamp"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+			<value>
+				<basePowerConsumption>300</basePowerConsumption>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="HeatedSunLamp"]</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="HeatedSunLamp"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+			<value>
+				<basePowerConsumption>1200</basePowerConsumption>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="HeatedSmallSunLamp"]</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="HeatedSmallSunLamp"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+			<value>
+				<basePowerConsumption>800</basePowerConsumption>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="HeatedMiniSunLamp"]</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="HeatedMiniSunLamp"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+			<value>
+				<basePowerConsumption>500</basePowerConsumption>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
 </Patch>
