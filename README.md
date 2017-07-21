@@ -1,4 +1,4 @@
 # Cheap-Lamps
-> Lowers the power requirement for Electric Lamps to 20w per lamp.
+> Lowers the power requirement for Standing Lamps and adjusts SunLamps from vanilla and Vegetable Garden.
 > 
-> Works with vanilla and More Furniture lamps. Sun Lamps not touched.
+> Works with vanilla, Vegetable Garden and More Furniture lamps.
